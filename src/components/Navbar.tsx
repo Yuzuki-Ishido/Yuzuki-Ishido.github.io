@@ -25,9 +25,9 @@ const Navbar = () => {
                     smooth={true}
                     offset={0}
                     duration={750}
-                    className="mt-5 cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-[#be7ffa] hover:underline"
+                    className="mt-5 cursor-pointer rounded-xl text-center text-2xl font-extrabold transition-all hover:scale-110 hover:text-[#be7ffa]"
                 >
-                    Logo
+                    IK
                 </Link>
                 <ul className="absolute top-[35%] flex flex-col items-center gap-y-5 text-base">
                     <li className="group flex flex-row">
@@ -50,7 +50,7 @@ const Navbar = () => {
                             to="Skillset"
                             spy={true}
                             smooth={true}
-                            offset={-250}
+                            offset={-300}
                             duration={750}
                             className="cursor-pointer transition-all group-hover:text-[#be7ffa]"
                         >
@@ -65,7 +65,7 @@ const Navbar = () => {
                             to="Experience"
                             spy={true}
                             smooth={true}
-                            offset={-180}
+                            offset={-300}
                             duration={750}
                             className="cursor-pointer transition-all group-hover:text-[#be7ffa]"
                         >
@@ -80,14 +80,14 @@ const Navbar = () => {
                             to="Projects"
                             spy={true}
                             smooth={true}
-                            offset={50}
+                            offset={-300}
                             duration={750}
                             className="cursor-pointer transition-all group-hover:text-[#be7ffa]"
                         >
                             <VscRepo size={28} />
                         </Link>
                         <div className="invisible absolute left-20 flex -translate-x-3 flex-row rounded-md bg-slate-300 px-2 py-1 font-semibold text-purple-700 opacity-20 transition-all group-hover:visible group-hover:translate-x-0 group-hover:opacity-100">
-                            Project
+                            Projects
                         </div>
                     </li>
                     <li className="group flex flex-row">
@@ -108,7 +108,7 @@ const Navbar = () => {
                 </ul>
             </header>
 
-            <ul className="border-1 fixed z-30 flex h-16 w-screen flex-row items-center justify-between bg-[#060910] text-white md:hidden">
+            <ul className="border-1 fixed z-40 flex h-16 w-screen flex-row items-center justify-between bg-[#060910] text-white md:hidden">
                 <li>
                     <Link
                         to="top"
@@ -117,9 +117,9 @@ const Navbar = () => {
                         offset={0}
                         duration={750}
                         onClick={() => setOpen(false)}
-                        className="ml-7 cursor-pointer rounded-md transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                        className="ml-7 cursor-pointer rounded-xl text-lg font-extrabold transition-all hover:scale-110 hover:text-violet-700"
                     >
-                        Logo
+                        IK
                     </Link>
                 </li>
 
@@ -128,7 +128,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div
-                className={`fixed top-16 z-20 flex w-full cursor-pointer flex-col items-center transition-transform duration-700 ease-in-out md:hidden ${!isOpen ? '-translate-y-60 opacity-100' : 'opacity-100'}`}
+                className={`fixed top-16 z-30 flex w-full cursor-pointer flex-col items-center transition-transform duration-700 ease-in-out md:hidden ${!isOpen ? '-translate-y-60 opacity-100' : 'opacity-100'}`}
             >
                 <div className="absolute flex w-screen flex-col bg-[#020306] text-base text-white">
                     <ul className="flex flex-col items-center justify-between gap-y-5 p-4">
@@ -140,7 +140,7 @@ const Navbar = () => {
                                 offset={-175}
                                 duration={750}
                                 onClick={handleClick}
-                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:font-bold hover:text-violet-400"
                             >
                                 Profile
                             </Link>
@@ -153,7 +153,7 @@ const Navbar = () => {
                                 offset={-150}
                                 duration={750}
                                 onClick={handleClick}
-                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:font-bold hover:text-violet-400"
                             >
                                 Skillset
                             </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
                                 offset={-200}
                                 duration={750}
                                 onClick={handleClick}
-                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:font-bold hover:text-violet-400"
                             >
                                 Experience
                             </Link>
@@ -176,10 +176,10 @@ const Navbar = () => {
                                 to="Projects"
                                 spy={true}
                                 smooth={true}
-                                offset={50}
+                                offset={-250}
                                 duration={750}
                                 onClick={handleClick}
-                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:font-bold hover:text-violet-400"
                             >
                                 Projects
                             </Link>
@@ -192,7 +192,7 @@ const Navbar = () => {
                                 offset={50}
                                 duration={750}
                                 onClick={handleClick}
-                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:bg-slate-300 hover:font-bold hover:text-violet-700 hover:underline"
+                                className="cursor-pointer rounded-md text-center transition-all hover:scale-110 hover:font-bold hover:text-violet-400"
                             >
                                 Contact
                             </Link>

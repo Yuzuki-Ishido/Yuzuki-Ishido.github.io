@@ -18,14 +18,13 @@ interface LogoBoxProps {
     logo: React.ReactNode;
     text: string;
 }
-
 const LogoBox: FC<LogoBoxProps> = ({ logo, text }) => {
     return (
         <div className="relative -z-10 col-span-1 m-1 flex w-full flex-row items-center rounded-lg bg-gray-800 px-4 py-2">
             <div className="static left-[25%] md:left-[20%] lg:left-[25%]">
                 {logo}
             </div>
-            <div className="absolute left-[45%] text-left text-lg text-white sm:left-[50%] sm:font-semibold md:left-[45%] lg:left-[50%]">
+            <div className="absolute left-[45%] text-left text-lg text-white sm:left-[4s0%] sm:font-semibold md:left-[45%] lg:left-[50%]">
                 {text}
             </div>
         </div>
@@ -36,7 +35,7 @@ export default function Skillset() {
     return (
         <section
             id="Skillset"
-            className="mx-[5%] mb-[120px] mt-80 flex flex-col md:mb-[10%] lg:mx-[25%]"
+            className="mx-[5%] mb-[120px] mt-80 flex flex-col md:mb-[20%] lg:mx-[15%]"
         >
             <div className="text-2xl font-bold text-section-header">
                 A list of languages and technologies I've used and have some

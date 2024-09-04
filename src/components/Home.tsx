@@ -5,7 +5,7 @@ export default function Home() {
             className="align-items-center grid h-screen justify-items-center pt-16"
         >
             <div className="mx-[10%] my-[160px] flex flex-col md:mx-[17.5%] md:mb-[22.5%] md:mt-[17%]">
-                <div className="text-section-header text-4xl font-thin">
+                <div className="text-4xl font-thin text-section-header">
                     Hi, my name is
                 </div>
                 <div className="text-6xl font-bold text-[#c284ff]">
