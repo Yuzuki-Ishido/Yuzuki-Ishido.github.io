@@ -32,3 +32,50 @@ export default function Contact() {
         </section>
     );
 }
+
+/* import emailjs from '@emailjs/browser';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
+
+const form = useRef();
+
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    emailjs
+        .sendForm(
+            'service_x49bi3m',
+            'template_rvs41dc',
+            e.currentTarget,
+            'OFYSWJ9P29GRsRz75',
+        )
+        .then(
+            () => {
+                console.log('success');
+            },
+            (error) => {
+                console.log('error', error.text);
+            },
+        );
+    e.currentTarget.reset();
+};
+<div
+                className={`absolute flex h-[70%] w-[80%] rounded-xl bg-slate-300 transition-all ease-in-out ${isClick ? 'z-20 opacity-100' : '-z-20 opacity-0'}`}
+            >
+                <form
+                    onSubmit={sendEmail}
+                    className="absolute top-5 flex flex-col"
+                >
+                    <label>Name</label>
+                    <input type="text" name="user_name" />
+                    <label>Email</label>
+                    <input type="email" name="user_email" />
+                    <label>Message</label>
+                    <textarea name="message" />
+                    <input type="submit" value="Send" />
+                </form>
+                <button
+                    className="absolute right-4 top-4 text-gray-600"
+                    onClick={handleClick}
+                >
+                    <IoIosCloseCircleOutline size="30" />
+                </button>
+            </div> */
