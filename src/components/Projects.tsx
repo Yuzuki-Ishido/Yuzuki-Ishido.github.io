@@ -21,7 +21,10 @@ export default function Projects() {
                         Tailwind CSS. It should be responsive so that it can be
                         viewed nicely on all devices.
                     </div>
-                    <a className="bottom-1 -z-10 my-2 flex w-32 justify-center rounded-xl bg-gray-700 p-4 font-semibold text-white transition-all hover:scale-105">
+                    <a
+                        className="bottom-1 -z-10 my-2 flex w-32 justify-center rounded-xl bg-gray-700 p-4 font-semibold text-white transition-all hover:scale-105"
+                        href="https://github.com/Yuzuki-Ishido/Yuzuki-Ishido.github.io"
+                    >
                         Learn more
                     </a>
                 </div>
