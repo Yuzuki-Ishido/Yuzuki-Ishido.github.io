@@ -1,34 +1,10 @@
 import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 export default function Contact() {
     const [isClick, setClick] = useState(false);
 
     const handleClick = () => {
         setClick(!isClick);
-    };
-
-    const form = useRef();
-
-    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        emailjs
-            .sendForm(
-                'service_x49bi3m',
-                'template_rvs41dc',
-                e.currentTarget,
-                'OFYSWJ9P29GRsRz75',
-            )
-            .then(
-                () => {
-                    console.log('success');
-                },
-                (error) => {
-                    console.log('error', error.text);
-                },
-            );
-        e.currentTarget.reset();
     };
 
     return (
